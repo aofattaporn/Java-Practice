@@ -1,0 +1,16 @@
+OPERATION TERNARY
+    (condition)? a : b;
+    -   boolean x = ( 1 > 0 )? true : false;
+
+OPERATION เลือนบิต
+    x << n  (เลื่อนบิตทางซ้าน  * 2^n )
+    x >> n  (เลื่อนบิตทางขวา  / 2^n )
+
+เหมือนกับ C
+-   if
+-   if_else
+-   else_if
+-   switch_case
+-   while
+-   do_while
+-   for_loop
