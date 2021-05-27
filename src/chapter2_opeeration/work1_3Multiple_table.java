@@ -2,7 +2,7 @@ package chapter2_opeeration;
 
 import java.util.Scanner;
 
-public class work3_Multiple_table {
+public class work1_3Multiple_table {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Begin : ");

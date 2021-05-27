@@ -2,7 +2,7 @@ package chapter2_opeeration;
 
 import java.util.Scanner;
 
-public class work1_price {
+public class work1_1price {
     public static void main(String[] args) {
         float price, net, discount;
         Scanner scanner = new Scanner(System.in);

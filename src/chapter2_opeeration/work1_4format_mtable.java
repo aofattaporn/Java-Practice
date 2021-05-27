@@ -2,7 +2,7 @@ package chapter2_opeeration;
 
 import java.util.Scanner;
 
-public class work4_format_mtable {
+public class work1_4format_mtable {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.print("End number : ");

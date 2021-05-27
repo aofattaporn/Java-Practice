@@ -2,7 +2,7 @@ package chapter2_opeeration;
 
 import java.util.Scanner;
 
-public class work2_grade {
+public class work1_2grade {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Input Score");
