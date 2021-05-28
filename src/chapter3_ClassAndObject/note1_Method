@@ -1,0 +1,21 @@
+แนวคิด OOP class & object
+    เปรียบเทียบกับการสร้างรถยนต์ : เริ่มจากการสร้าง class และกำหนดองค์ประกอบไปใช้ใน object
+    -    class : พิมพ์เขียว -> โครงสร้างที่ใช้ในการกำหนดการทำงานของ อ๊อบเจ๊กต์
+    -   object : รถยนต์ที่สร้างขึ้นมาสามารถใช้ได้หลายแบบ
+
+การสร้าง Method
+    ใช้กำหนดการกระทำอย่างใกอย่างหนึ่งของ class หัวใจหลักของ class
+    - void
+        => parameter
+        => no parameter
+    - no vod
+        => parameter
+        => no parameter
+    ในการกำหนด parameter ของ method มีกี่ตัวหรือไม่มีเลยก็ได้ หรือเป็น class ก็ได้
+    methode ภายใน class main ต้องกหำหนดเป็น static
+
+Mrthod Overload
+    เป็นเมธอดที่มีชื่อเหมือนกันยเลย แตกต่างที่ จำนวน paeameter และ signature ต่างๆ
+    -   public void foo(){}
+    -   public void foo(String str){}
+    -   public void foo(int n, char c, byte d){}
