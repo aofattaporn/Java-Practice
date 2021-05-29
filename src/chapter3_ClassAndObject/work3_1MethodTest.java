@@ -4,7 +4,7 @@ package chapter3_ClassAndObject;
 
 import java.util.Scanner;
 
-public class work2_1MethodTest {
+public class work3_1MethodTest {
 
     public static void main(String[] args) {
         System.out.println("========Test-Method=================");
