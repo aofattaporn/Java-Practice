@@ -1,0 +1,11 @@
+Constructor : method ชื่อเดียวกดียวกับ class
+    - ชื่อเดียวกับ class
+    - สามารถเป็น overload ได้
+    - modifier แบบ prblic เท่านั้น หรือไม่กำหนดอะไรเลย
+    - ไม่มีการส่งค่ากลับ แต่ไม่ต้องระบุ void
+    - method ชิ้นนี้ทำงานอัตโนมัติ โดยคำสั่ง new ในตอนสร้าง object
+    - ส่งค่า argrument ระหว่าง constructor โดยคำสั่ง this
+    - constructor ที่รับข้อมูลมาปกติจะพักใน field
+    - ทุกๆ class จะประกอบด้วย constructor method 1 อันเสมอ เป็นค่า defalt
+
+

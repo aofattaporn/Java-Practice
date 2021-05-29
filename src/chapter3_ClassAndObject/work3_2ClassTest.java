@@ -1,6 +1,6 @@
 package chapter3_ClassAndObject;
 
-public class work2_2ClassTest {
+public class work3_2ClassTest {
     public static void main(String[] args) {
         // การสร้าง object มาใช้นอก class
 //        MyStringg mystr = new MyStringg();
