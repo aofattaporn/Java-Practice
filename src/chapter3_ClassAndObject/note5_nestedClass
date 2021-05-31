@@ -1,0 +1,25 @@
+Nested class ก็คือการที่ class ซ้อนกันหลายๆ class
+    - Static Nested class
+    - NonStatic Nested class
+        - Innerr class
+        - Local Class ซ้อนใน method
+        - Anonymous Class
+
+    Static Nested class
+        เป็ร class modifier แบบ static ซ่อนใน block class หลัก
+        - สร้างกี่ class ซ้อนกันก็ได้ ซึ่งถือว่าเป็นสมาชิกตัวหนึ่งของ class ชั้นนอก
+        - class ชั้นในสามารถเข้าถึง class ชั้นนอกได้ แต่ชั้นนอกต้องระบุเป็น static เพราะชั้นในเป็น static
+        - ถ้าจะใช้ class ชั้นใน ต้องสร้าง object โดยระบุชื่อ clss ชั้นนอกด้วย
+        การประกาศ object เพื่อใช้ class ชั้นใน
+        Classชั้นนอก.classชั้นใน objectname = new Classชั้นนอก.classชั้นใน();
+
+
+
+    Innner Class
+        คล้ายกับ static nested class แต่ class ชั้นในไม่ต้องประกาศ static
+        การประกาศ object เพื่อใช้ class ชั้นใน
+        Classชั้นนอก objectname = new Classชั้นนอก();
+        Classชั้นนอก.Classชั้นใน objectname2 = objectnam.new Classชั้นใน();
+
+    Local Class
+        สร้าง class ชั้นใน ซ้อน mrthood

@@ -4,7 +4,6 @@ public class work3_4Constructor {
     public static void main(String[] args) {
         Horoscope hrs = new Horoscope();
 
-
     }
 }
 class Horoscope {

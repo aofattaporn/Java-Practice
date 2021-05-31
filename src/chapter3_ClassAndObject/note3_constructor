@@ -8,4 +8,10 @@ Constructor : method ชื่อเดียวกดียวกับ class
     - constructor ที่รับข้อมูลมาปกติจะพักใน field
     - ทุกๆ class จะประกอบด้วย constructor method 1 อันเสมอ เป็นค่า defalt
 
+Modifer static ( เป็น keyword นำหน้า class field method โดยไม่ต้องสร้าง objejct )
+    - สิ่งที่เป็น static สามารเรียกใช้ที่แบบ static ได้เท่านั้น
+    - แต่ถ้า non-static จะเรียกได้ทั้งแบบ static และ non-ststic
+
+Instance variable ( field ที่เก็บเป็นแบบ static )
+    - ทำให้เวลาสร้าง object มีค่าเท่ากันหมด
 

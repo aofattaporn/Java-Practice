@@ -1,0 +1,4 @@
+Singleton ( มีเพียงหนึ่งเดียว ) ทำให้คราสนั้นมี object เดียว
+    - ไม่ให้เข้าถึง constructor ได้ดดยตรง
+    - class เป้นผู้สร้าง object ตัวมันเอง ส่วนใหญ่ใช้ชื่อ getinstance
+    -  มร field แบบ static เพื่อเก็บ object ตัวมันเอง

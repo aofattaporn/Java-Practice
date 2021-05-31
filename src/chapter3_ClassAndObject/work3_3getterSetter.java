@@ -20,7 +20,7 @@ public class work3_3getterSetter {
 
     }
 }
-class Student {
+class Student extends GodAon {
     // กำหนดค่า field
     private String name;
     private int age;
@@ -48,5 +48,11 @@ class Student {
         else {
             this.age = 0;
         }
+    }
+
+    @Override
+    public void mustImplementThis() {
+        godOfAnything();
+
     }
 }
