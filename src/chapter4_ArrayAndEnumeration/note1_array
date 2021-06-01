@@ -1,0 +1,22 @@
+Array ( ข้อมูลรูปแบบชุด )
+    การประกาศ Array
+    1.  Arraytype ArrayName[];
+        ArrayName = new Arraytype[ArraySize]
+    2. Arraytype ArrayName[] = new  Arraytype[ArraySize]
+    3. int[] nums3_test = {120, 20, 30, 40, 50}; ( ประกาศตัวแปรเลยไม่ต้องประกาศไซส์ )
+
+การเข้าถึงในตัวแปร Array
+    -  arrayName[index] = valure
+
+Method and Array
+    การเรียง data
+        -   Array.sort(ArrayName); // ไม่มีกา
+
+    การหาข้อมูลใน Array
+        -   Arrays.binarySearch(arrayName, value); // คือค่าเป็น integer >= 0
+
+    การหาขนาดของ array
+        -   arrayName.length;
+
+    ตัดตัวที่ไม่ต้องการออก (return array)
+        -   String[] str = st2.split(" ");
