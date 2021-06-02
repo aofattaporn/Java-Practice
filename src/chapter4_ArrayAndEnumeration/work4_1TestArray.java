@@ -1,6 +1,6 @@
 package chapter4_ArrayAndEnumeration;
 
-public class workk4_1TestArray {
+public class work4_1TestArray {
     public static void main(String[] args) {
         int sum = 0;
         // การประกาศแบบที่ 1

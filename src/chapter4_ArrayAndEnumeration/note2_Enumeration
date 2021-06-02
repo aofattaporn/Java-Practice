@@ -1,0 +1,20 @@
+Enumeration (enum)
+    เป็นการส้รางชนิข้อมูลแบบรายยการ
+    Weekday = {Sunday, ...., };
+    เราสามารถใช้งานเองได้ง
+        -   สร้างไว้ใน class
+        -   ส้รางไว้นอก class
+
+    การแปลง enum เป็น string : เติท toStrinf();
+
+    การแปลง string เป็น enum : เติม valueOF();
+
+    การ loop ใน enum ใช้การ .value();
+            for (Gender i: Gender.values()) {
+                System.out.println(i);
+            }
+
+    การสรา้ง constructor ให้กับ enum
+        -   สร้าง feild แบบ private มารับค่า
+        -   สร้าง constructor คล้ายกบั method setter เพื่อเก็บค่าจากภายนอกไปปรับ field
+        -   สร้าง method getter มา return feild กลับไป
