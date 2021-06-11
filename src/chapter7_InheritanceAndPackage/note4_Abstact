@@ -1,0 +1,13 @@
+Abstract เป็น class ที่ไว้สร้าง bassclass นำไป override method ต่อ
+    Abstract class
+    -    มี keyword abstract นำหน้าการประกาศ class
+    -   สมาชิกด้านใน เป็น abstract ได้เฉพาะ method เท่านั้น
+    -   ประกาศนำหน้าชนิดข้อมูลที่ return หรือ void
+    -   ประกาศแค่ชื่อ ไม่ต้องมี black scope {}
+    -   modiifier of method เป็น pprivate ไม่ได้
+
+    extend from Abstract class
+    -   เมื่อ override มาแล้วไม่ต้องกำหนด abstract นำหน้า method
+    -   ในการ extend เพื่อ override methode ถ้า override ไม่หมด ต้องกำหนด class เป็น Abstract
+    -   ไม่สามารถ สร้าง object จาก abstract class ได้
+    -   แต่นำ references ไปสร้าง

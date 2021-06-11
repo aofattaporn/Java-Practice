@@ -1,0 +1,23 @@
+Inheritance - การพัฒนาต่อเติม class เดิมเพื่อให้ class ใหม่มีประสิทธิภาพมากยิ่งขึ้น
+    ใช้การ ( extend ) จาก super class เพื่อสืบทอดลักษณะต่างๆจาก super class
+    -   ต้องเป็น class ที่สามารถมองเห็นได้
+    -   หลังการสืยทอด องค์ประกอบ subclass เหมือน กับ  superclass เกือบหมด
+    -   super class อันเดียว สารมรถ สร้าง subclass กี่อันก็ได้
+    -   subclass สืบทอดได้ใน superclass เดียวเท่านั้น
+    -   สามารถสืบทอดกันต่อเนื่องได้แทน
+
+สิ่งที่จะไม่ถูกสืบทอดใน subclass
+    -   สมาชิกแบบ private
+    -   constructor
+
+การใช้ constructor ของ class super
+    -   สามารถสร้างได้ตามปกติเลย แต่ได้แต่ default constructor
+    -   "แต่" constructor ของ super class จะถูกเรียกมาใช้ก่อนเสมอ
+    -   ในขั้นตอนของ การสร้าง object
+    -   แก้ปัญหา สืบทอด constructor แบบ มี parameter โดยใช้ super
+
+    หลักการใช้ super
+    -   กำหนด super บรรทัดแรกสุด
+    -   ใน constructor เดียวกันจะใช้ super ได้เพียงแค่ครั้งเดียวเท่านั้น
+    -   ถ้าเรียก constructor ของ superclass แบบมีพารามิเตอร์ จะทำให้ default constructor
+

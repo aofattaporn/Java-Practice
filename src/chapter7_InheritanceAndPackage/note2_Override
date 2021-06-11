@@ -1,0 +1,18 @@
+หลักการ Override ของสมาชิก Superclass : เป็นการเปลี่ยนสมาชิกของ  หียำพแสฟหห
+    -   override เป็นการกำหนดสมาชิกของ superclass ใหม่ให้เป็นไปตามที่ต้องการ
+    -   override เกิดการปิดบังไม่ให้เข้าถึงในสมาชิก superclass ได้ -> มองเป็นตัวแปรใหม่
+    -   การ override มีผลแค่ subclass และ class มัน
+    -   ถ้า override ไปแล้ว อยากจะเข้าถึง superclass ให้ใช้ keyword super.
+    -   override ได้ถ้าสมาชิกตัวนั้นไม่กำหนดแบบ final
+
+    shadow field
+    -   เป็นการแก้ field ของ superclass จาก subclass
+
+    Override method
+    -   กำหนด method และ parameter ให้ตรงกับ superclass
+    -   override ได้ในกรณีเป็น public protected no_modifier
+    -   superclass ต้องไม่เป็น private -> ถ้าเป็นจะถือเป็นการสร้าง method ใหม่ให้ subclass
+
+    -> สามารถใช้ @Override (annotation override ) เพื่อเช็คความเป็น override ได้
+    -> ถ้าต้องการอ้างถึง superclass ที่ทำการ override subclass แล้วให้ใช้ keyword super.
+    -> การใช้ final จะทำให้ไม่สามารถ override ได้
