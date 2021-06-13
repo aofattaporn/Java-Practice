@@ -1,4 +1,5 @@
 package chapter7_InheritanceAndPackage;
+// abstract class
 abstract class AbSuper {
     //Field of abstract method
     private double x1 = 10;
@@ -11,6 +12,15 @@ abstract class AbSuper {
     }
 }
 
+// override เพียง method เดียวดังนั้น ต้องใส่ keyword abstract
+abstract class AbSub_2 extends AbSuper{
+    @Override
+    protected double sharpne() {
+        return 32.23;
+    }
+}
+
+// override ครบทุก method แล้วสามารถนำไปสร้าง object ได้เลย
 class AbSub extends AbSuper {
     @Override
     protected double sharpne() {
@@ -22,10 +32,11 @@ class AbSub extends AbSuper {
     }
 }
 
+
 public class work5_5Abstact {
     public static void main(String[] args) {
         AbSub as = new AbSub();
-        System.out.println(as.getValue(3));
+
 
     }
 }

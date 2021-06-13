@@ -1,0 +1,22 @@
+Interface มีโครงสร้างคล้ายยกับ class แต่มีข้อจำกัด
+    modifier interface interfaceName {
+    }
+    Interface Method
+    -   ถ้าเป็น field มีลักษณะเป็น final
+    -   จะไม่มี concrete method
+    -   ไม่มี constructor
+    -   method ภายใน interface จะเป็นแบบ abstracted แต่ไม่มี keyword อยู่
+    -   สามารถ implements ได้หลายๆ method พร้อมๆกัน
+    -   เมื่อ implements แล้วใน class นั้นต้อง override ทุกๆ method
+
+    ดังนั้น interface ควรที่จะมี method น้อยๆ
+    เพราะว่าเมื่อ implements มาต้อง override ให้หมด
+
+    ข้อหำกำหนดใหม่ของ Interface ใหม่
+    -   สามารถมี method static ได้  -> ในการ implement สามารถใช้ได้เลย
+    -   สามารถมี default method ได้
+
+Functional Interface
+    -   เขียน @Functionallnterface ก่อนเริ่มส้ราง
+    -   มีเพียง Abstract method เท่านั้น -> แต่มี Default method ได้ไม่จำกัด
+
