@@ -1,0 +1,14 @@
+Lamda Expression ( method ที่ไม่มีชื่อ )
+( parameter ) -> { statment }
+     -  ตัด return type
+     -  ตัด name method
+
+     Implicit -> ระบุชนิด parameter
+
+     Explicit -> ไม่ระบุ parameter
+
+     -  parameter ตัวเดียวไม่ต้องระบุ  typr
+     -  body มีคำสั่งเดียวไม่ต้อง return
+     -  body ใช้ return ต้องใส่ {}
+
+
