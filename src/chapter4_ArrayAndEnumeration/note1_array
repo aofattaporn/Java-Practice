@@ -6,7 +6,7 @@ Array ( ข้อมูลรูปแบบชุด )
     3. int[] nums3_test = {120, 20, 30, 40, 50}; ( ประกาศตัวแปรเลยไม่ต้องประกาศไซส์ )
 
 การเข้าถึงในตัวแปร Array
-    -  arrayName[index] = valure
+    -  arrayName[index] = value;
 
 Method and Array
     การเรียง data

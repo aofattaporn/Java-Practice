@@ -3,6 +3,7 @@ import java.util.Scanner;
 
 public class banknote {
     public static void main(String[] args) {
+        // ประกาศ method ในการใช้ Scanner
         Scanner scan = new Scanner(System.in);
         System.out.print("จำนวนเงินที่ต้องการถอน : ");
         int withdraw = scan.nextInt();

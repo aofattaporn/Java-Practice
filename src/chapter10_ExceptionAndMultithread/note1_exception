@@ -1,0 +1,15 @@
+ข้อผิดพลาด มี 2 ลักษณะ
+-   Error     -> ส่วนมากเป็นการผิดพลาดของ ระบบ
+-   Exception -> เป็นข้อผิดพลาดไม่ร้ายแรง เราสามารถแก้ได้
+
+Exception handling  : เป็นการจัดการข้อผิดพลาดที่สามารถจัดการได้
+
+try/catch : คีย์เวิร์ดในการตรวจจับ exception
+    try {
+        (code)
+    }
+    catch(ExceptionType reference){
+        (การกรพทำหลังเกิด exception)
+    }
+    method in Exception
+

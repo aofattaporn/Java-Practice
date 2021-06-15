@@ -1,0 +1,25 @@
+Collection
+ใช้ในการจัดเก็บรายการหรือชุดข้อมูล คล้ายกับ Array แต่มีข้อแตกต่างอยู่่บ้าง
+-   ไม่กำหนดสมาชิดล่วงหน้า -> ขนาดตามสมาชิกใน collection
+-   collection เพิ่มหรือลลดสามารถกำหนดได้ตามต้องการ
+-   การเข้าถึง collection ใช้เลขลำดับ หรือใข้ key ในการเข้าถึง
+-   collection สามารถเก็บข้อมูลต่างชนิดกันได้
+
+    common method
+    -   add(elements)
+    -   addAll(collection)
+    -   clear()
+    -   contains(element)
+    -   containsAll(element)
+    -   isEmpty()
+    -   iterator()
+    -   remove()
+    -   removeAll()
+    -   retainAll
+    -   size()
+    -   toArray
+
+    การเข้าถึงสมาชิกด้วย Iterator
+    hasNext()
+    next()
+    remove()

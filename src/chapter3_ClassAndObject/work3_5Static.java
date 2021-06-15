@@ -20,7 +20,7 @@ class long_static {
     private static double sRadiuss =0;
 
     public void setsRadiuss_static(double Radius){
-        sRadiuss = Radius;
+        this.sRadiuss = Radius;
     }
     public double getsRadiuss_static() {
         return sRadiuss;

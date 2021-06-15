@@ -5,9 +5,9 @@ Enumeration (enum)
         -   สร้างไว้ใน class
         -   ส้รางไว้นอก class
 
-    การแปลง enum เป็น string : เติท toStrinf();
+    การแปลง enum เป็น string : เติท .toStrinf();
 
-    การแปลง string เป็น enum : เติม valueOF();
+    การแปลง string เป็น enum : เติม .valueOF();
 
     การ loop ใน enum ใช้การ .value();
             for (Gender i: Gender.values()) {

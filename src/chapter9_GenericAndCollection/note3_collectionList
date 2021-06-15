@@ -1,0 +1,54 @@
+List collections
+list เป็นinterface ดังนั้นจะต้องใช้งานผ่าน class ที่ implements จากมัน
+ได้แก่ ArrayList, LinkedList, Vector, Stack
+    contains(element)
+    -   add(ลำดับ, elements)        : add elements in List
+    -   addAll(ลำดับ, collection)   : add elements of index
+    -   get(ลำดับ)                  : get elements from list
+    -   indexOf(elements)          : find index elements from list (first)
+    -   lastindex(ลำดับ)            : find index elements from list (last)
+    -   remove(ลำดับ)               : remove element from index list
+    -   set(ลำดับ, elements)        : modifier element when we have elenmets
+
+ArrayList
+    -   เป็น class implements จาก list
+    -   ตอนประกาศ
+        ArrayList<TypeName> arrayName = new ArrayList<TypeName>();
+
+LinkedList
+    -   มี method ในการเข้าถึง elements แรกสุดและสุดท้ายโดยตรง
+    -   มี pointer ที่เข้ามาเกี่ยวข้อง
+
+    method ที่เฉพาะต่อ LinkedList
+    -   addFirst(elements), addLast(elements)
+    -   getFirst(), getLast()
+    -   removeFirst(), removeLast
+
+Vector
+    -   คล้ายกับ ArraysList + LinkedList
+    -   มีความ synchronized กว่า
+    method ที่เฉพาะต่อ Vector
+    -   addElement(element)
+    -   elementAt(index)
+    -   firstElement(elements), lastElement(element)
+    -   removeElement(element)
+    -   removeElementAt(index)
+    -   setElement(element, index)
+
+Stack
+    -   extend มาจาก Vector
+    method ที่เฉพาะต่อ Stack
+    -   empty()
+    -   peek()
+    -   push()
+    -   pop()
+
+Ques
+    -   ques เป็น inteface ที่ imprements มาจาก collection
+    -   เรียกใช้ผ่านทาง class LinkedList
+    Ques<type> quesName = new LinkedList<type>();
+    method ที่สำคัญของ Ques
+
+    -   offer(elements)     : เพิ่ม elementsเข้าไปต่อคิว
+    -   peek()              : อ่าน elements จากหัวคิว
+    -   pull()              : อ่านค่าจากหัวและลบทิ้ง
