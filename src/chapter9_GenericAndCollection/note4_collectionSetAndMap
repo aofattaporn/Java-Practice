@@ -1,0 +1,42 @@
+Set -> เป็น interface
+    -   จัดเก็บ element ที่ซ้ำกันไม่ได้
+    ต้องใช้ผ่าน class ที่มาการใช้งานต่อจากมัน
+    1.  HashSet
+        implements มากจาก interface set หากมีการซ้ำกันของ elements จะไม่เกิด error
+        -   ***** elements ที่อ่านได้ไม่มีความแน่นอน ****
+        -   method ของHashset ส่วนใหญ่จะใช้ Common Method
+
+    2.  LinkedHashSet
+        สืบทอดมาจาก HashSet
+        -   elements ที่เก็บก็ต้องไม่ซ้ำเหมือนกัน
+        -   elements ที่อ่านได้จะตรงตามลำดับ****
+
+    3.  TreeSet
+        -   elements จะถูกจัดเรียงใหม่ "ตามตัวอักษร"
+
+Map -> เป็น collection ที่มีความพิเศษอยู่มาก
+    -   มีการจัดเก็บเป็น key & Value
+    -   การเข้าถึง elements จะใช้ key เป็นตัวกำหนด
+    -   Value อาจจะเป็น null หรือค่า ซ้ำกันได้ แต่ key ทำไม่ได้
+    -   ต้องกำหนด ค่า key และ value แยกกัน
+    method ในกลุ่ม map ที่ซ้้ำคัญ
+    -   put(key, value), get(key)   -> เพิ่ม elements ลงใน map และอ่านค่าตาม key
+    -   clear()
+    -   containsKey(key)            -> ตรวจสอบมี key ที่ระบุหรือไม่
+    -   isEmpty()                   -> ตรวจสอบ map ว่างเปล่าไหม
+    -   remove(key)
+    -   replace(key, value)
+    -   size()
+    -   value()
+
+    1.  HashMap
+        elements ที่อ่านได้ จะมีลำดับที่ไม่แน่นอน
+
+    2.  LinkedHashMap()
+        elements จะเรียงตามลำดับที่ใส่เข้าไป
+
+    3.  TreeMap()
+        elements จะเรียงลำกดับตัวอักษร
+
+forEach() : การเข้าถึง elements แต่ละตัวใน java 8  ใช้กับ colection
+forEach()

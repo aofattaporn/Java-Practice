@@ -6,17 +6,26 @@ import java.util.*;
 
 public class work9_3List {
     public static void main(String[] args) {
-//        ArrayList();
-//        Stack();
-//        Ques();
+        System.out.println("======= ArrayList ============");
+        ArrayList();
+        System.out.println("\n======= LinkedList ============");
+        LinkedList();
+        System.out.println("======= Stack ============");
+        Stack();
+        System.out.println("\n======= Ques ============");
+        Ques();
+        System.out.println("==========================");
         InetAddress inet = InetAddress.getLoopbackAddress();
-        System.out.println("IP : " + inet.getAddress());
-        System.out.println("Host : " + inet.getHostName());
+//        System.out.println("IP : " + inet.getAddress());
+//        System.out.println("Host : " + inet.getHostName());
 
     }
 
     private static void CreatingList(){
         System.out.println("creating arraylist");
+        // creating test Array
+        int[] testArray = new int[20];
+        // creating list by asList method
         int[] creatList3 = {10, 20, 30, 40, 50};
         List<Integer> creatList2 = Arrays.asList(1, 2, 3, 4, 5);
     }
@@ -32,10 +41,11 @@ public class work9_3List {
         arl.add("c");
         arl.add("d");
         System.out.println(arl);
+        // add elements from size
         arl.add(arl.size(), "|e|");
         arl.add("g");
         int size = arl.size();
-        System.out.println("=================");
+        System.out.println("----------------");
         for (int i = 0; i < size; i++) {
             System.out.print(" "+ arl.get(i));
         }
@@ -43,7 +53,7 @@ public class work9_3List {
         arl.set(idx, "f");
         arl.remove("a");
         Iterator iterable = arl.iterator();
-        System.out.println("\n================");
+        System.out.println("\n----------------");
         while (iterable.hasNext()) {
             System.out.print(" "+ iterable.next());
         }
@@ -51,9 +61,11 @@ public class work9_3List {
 
     private static void LinkedList() {
         LinkedList<String> linked = new LinkedList<>();
-        linked.addFirst("first");
-        linked.addLast("last");
+        linked.add("1");
+//        linked.addFirst("first");
+//        linked.addLast("last");
         System.out.println(linked);
+
     }
 
     private static void Stack() {

@@ -38,7 +38,7 @@ Vector
 Stack
     -   extend มาจาก Vector
     method ที่เฉพาะต่อ Stack
-    -   empty()
+    -   empty()     -> return true
     -   peek()
     -   push()
     -   pop()
