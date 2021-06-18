@@ -12,4 +12,33 @@ try/catch : คีย์เวิร์ดในการตรวจจับ e
         (การกรพทำหลังเกิด exception)
     }
     method in Exception
+    -   getMessage()    : อ่านข้อความที่แสดงการเกิด exception
+    -   toString()      : อ่านข้อความที่แสดง package ของคราสพร้อมสาเหตุการเกิด
+    -   printStackTrace() : พิมพ์รายละเอียดทั้งหมดที่เกี่ยวข้อง
 
+เทคนิคการใช้ try catch
+    -   สามารถดัก catch ไว้ในหลายๆคราสพร้อมกันได้
+    -   ถ้าเป็น exception ที่จัดการได้ อาจจะนำไปทำเป็น method
+
+block finally : เป็นการกำหนด block ที่ต้องการใก้หระทำคำสั่งเสมอ ไม่ว่าจะเกิด exception หรรือไม่
+
+การโยนนข้อผิดพลาด throw and throws
+throw
+    -   ให้สร้าง object ของ class ตามชนิดของ exception โดยกำหนดข้อความที่ต้องการแสดง
+    -   ใช้คีย์เวิร์ด throw กับ object ที่สร้างขึ้น เพื่อโยน exception นั้น
+    exception จะถูกจัดการได้หลายที่
+        -> เมื่อ try exception จะจัดการใน catch
+        -> เมื่อ โยนใน method ที่อยู่ใน try จะจัดการดดย catch
+            *** exception ที่โยนกับ ใน catch ต้องตรงกัน
+        -> เมื่อโยนโดยไม่มี catch exception จะถูกส่งไปที่ JVM
+
+throws
+    ถ้าขอบเขตการตรวจจับ exception ครอบครุมทั้ง method สามารถนำ throes
+
+ประเภท Exception 2 ประเภท
+    1.  Checked Exception   : IOException, SQLException
+        *** method ปลายทางที่โยน exception ไปให้ ไม่จำเป็นต้องมี try/catch เพื่อจัดการ
+            java จะไม่ตรวจสอบข้อผิดพลาด
+            ในการโยน throw และ throws ล้วนเป็น Unchecked
+    2.  Unchecked Exception : class RuntimeException -> ArithmeticException NullPointerException
+        *** ปลายทางจะต้องมี try/catch คือบังคับให้ต้องตรวจจับ ผห
