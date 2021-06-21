@@ -8,7 +8,7 @@ list เป็นinterface ดังนั้นจะต้องใช้ง�
     -   indexOf(elements)          : find index elements from list (first)
     -   lastindex(ลำดับ)            : find index elements from list (last)
     -   remove(ลำดับ)               : remove element from index list
-    -   set(ลำดับ, elements)        : modifier element when we have elenmets
+    -   set(ลำดับ, elements)        : modifier element when we have other elenmets
 
 ArrayList
     -   เป็น class implements จาก list

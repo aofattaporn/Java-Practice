@@ -1,0 +1,37 @@
+Thread คือการทำงานของคอมพิวเตอร์หรือ 1 process
+สถานะของ Thread
+    NEW         เป็นสถานะเมื่อสร้าง object ของเธรด เธรกจะพร้อมที่จะทำงาน
+    RUNNABLE    เป็นสถานะของ เธรดที่ทำงานภายใน JVM
+    BLOCKED     เป็นสถานะที่เธรดถูก block เชื่อครา่ว
+    TIMED_W     เป็นสถานะที่ เธรดหยุดตามเวลาที่กำหนด
+    WAITING     เป็นสถานะที่เธรดหยุดรอโดยไม่ระบุเวลา ( มี method สั่งให้ทำงานต่อ )
+    TERMINATED  เป็นสถานะที่เธรดสิ้นสุดการทำงาน
+
+การสร้าง Thread ทำกันได้อยู่ 2 วิธี
+    1.  extend Thread -> override method run()
+    2.  Imprements Runnable -> override method run()
+    * หรือใช้วิธี Anonymous ได้เช่นกัน -> สร้าง object จาก class Thread
+    * Anonymous กับ interface ได้เช่นกัน แต่ต้องนำ object ไปกำหนดใน คราส thread อีกที
+
+การกำหนดการทำงานของ Thread
+    ถึงแม้เราจะสร้าง เธรดทำงานโดย override method run()
+    แต่ถ้าจะเรียกใช้งานจริงๆต้องใช้ method start()
+
+การกำหนด Priority ของ Thread
+    setPriority(number) : กำหนด priority สามารถกำหนดได้ 1 - 10
+    getPriority()       : อ่านลำดับความสำคัญ
+    *   สามารถกำหนดได้อีกแบบ
+        MIN_PRIORITY    NORM_PRIORITY   MAX_PRIORITY
+
+การหน่วงการทำงานของ Thread
+    sleep()     :   ไว้หยุดเธรดชั่วคราวตามระยะเวลาที่กำหนด millisecond
+                    *เป็น method ประเภท Checked Exception
+
+    join()      :   เป็นการหน่วงเวลาให้ method ปัจจุบันทำงานจนเสร็จ
+                    *เป็น method ประเภท Checked Exception
+
+    yeild()     :   เป็นการสั่ง เธรดปัจจุบันหยุดทำงานไว้ก่อนเพื่อเปิดโอกาให้ เธรดอื่นทำงาน
+
+Synchronization และการสื่อสารระหว่าง Thread
+
+
