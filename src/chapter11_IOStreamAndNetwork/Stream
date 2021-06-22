@@ -1,0 +1,25 @@
+ประเภทของข้อมูลที่ส่งผ่าน Sream
+1.  Character Stream  -> ประเภทข้อมูลอักขระ
+    -   Reader : อ่านข้อมูลเข้ามา class FileReader, BufferedReader
+    -   Writer : เขียนข้อมูลออกจากโปรแกรม class Writer, BufferedWriter
+2.  Byte Stream     -> ประเภทข้อมูลแบบ byte
+    -   InputStream  : stream ในการรับข้อมูลเข้าโปรแกรม FileInputStream
+    -   OutputStream : stream ส่งออกข้อมูลจากโปรแกรม FileOutputStream
+
+การดัก Exception
+    1.  try...catch
+    2.  throws
+
+Character Stream
+    การเขียน file Character Stream
+        1.  เขียนข้อมูลด้วยคราส FileWriter
+        2.  เีขยนไปเก็บ buffer โดยใช้ FileWriter ใช้ร่วมกับ BufferedWritter
+        3.  เขียนพร้อมจัดรูป PrintWriter
+
+    การอ่าน file Character Stream
+        1.  อ่านมาแต่ละขระ ด้วย class FileReader อ่านโดยใช้ method read() อ่านจนกว่าจะคืนค่าเป็น -1
+        2.  อ่านแต่ละบรรทัด ด้วย class FileReader ทำเป็น object ให้แก่ parameter ของ class bufferReader
+            โดยใช้ method readLine() อ่านแต่ละบรรทัดจนกว่าจะเป็น ค่า null
+        3.  การอ่านทั้งไฟล์โดยใช้ String counter = scanner.useDelimiter("\\A").next();
+
+Byte Stream
