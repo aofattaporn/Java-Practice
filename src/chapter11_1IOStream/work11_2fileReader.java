@@ -1,12 +1,11 @@
-package chapter11_IOStreamAndNetwork;
+package chapter11_1IOStream;
 
 import java.io.BufferedReader;
-import java.io.BufferedWriter;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.Scanner;
 
-public class work11_fileReader {
+public class work11_2fileReader {
     public static void main(String[] args) throws IOException{
 
 //        fileReader();

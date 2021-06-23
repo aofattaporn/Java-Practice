@@ -1,0 +1,25 @@
+Network เพื่อให้ computer สามารถรับส่งข้อมูลระหว่างกันได้
+IP
+    computer แต่ละเครื่องเชื่อมต่อในระบบเครือข่าย จำเป็นต้องกำหนด Address ให้กับมัน เหมือนรหัส โดยกำหนดได้ 2 แบบ
+    IP Address : IPv4 ot IPv6
+    Domain name : ชื่อเล่นของ IP แทนการจดจำของเครื่อง ไปเช็คชื่อกับ DNS
+
+คราส InetAddress
+    ตรวจสอบ IP และ Domain Name (Host Name)
+    -   ถ้าต้องการใช้คราส ต้องสร้าง method getLoopbackAddress();
+    -   อ่าน IP : getHostAddress()
+    -   อ่าน Host : getHostName()
+
+Port
+    เป็นจุดที่ใช้ในการเชื่อมต่อระหว่าง computer โดย port 0 - 1023
+    หากต้องการสร้าง application ควรเลือก port ที่ว่าง
+    class SeverSocket   :   ใช้ติดต่อ port ฝั่ง sever
+    class Socket        :   ใช้ติดต่อ port ฝั่ง client
+
+การเชื่อมต่อ Sever และ Client
+ในส่วนของ Sever
+    -   สร้าง object ให้แก่ SeverSocket โดยระบุหมายเลข port ที่ไม่ซ้ำให้ constructor
+    -   ใช้ referance ของ class Socket ในการรับ object ที่ได้มาจาก Client โดย method accept()
+ในส่วนของ Client
+    -   ในส่วนของ Client ต้องมีการรับ port ที่ว่าง
+

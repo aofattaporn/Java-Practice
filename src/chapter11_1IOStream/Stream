@@ -23,3 +23,19 @@ Character Stream
         3.  การอ่านทั้งไฟล์โดยใช้ String counter = scanner.useDelimiter("\\A").next();
 
 Byte Stream
+    การเขียน Binary file โดยใช้ file Output Stream
+        1. ใช้ class FileOutStream เพื่อเชื่อมไฟล์  -> ต้องกำหนด part
+      1.2. หากต้องการเพิ่มความเร็วของ buffer ใช้ class BufferedOutStream
+        2. ใช้ class DataOutStream เพื่อเขียนไฟล์นั้นลงไป
+        3. ต้อง ปิด object ทุกตัวโดยใช้ method close()
+
+        method ที่ใช้เขียน
+        writeUTF()
+        WrtteInt()
+        WriteBoolean()
+
+    การอ่าน Binary file โดยใช้ file Input Stream
+        1.  เหมือนกับ class FileInputStream แต่เป็น class FileInputStream
+
+การจัดการ File and Directory
+

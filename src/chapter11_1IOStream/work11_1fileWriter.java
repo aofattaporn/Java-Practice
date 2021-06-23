@@ -1,11 +1,11 @@
-package chapter11_IOStreamAndNetwork;
+package chapter11_1IOStream;
 
 import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-public class work11_fileWriter {
+public class work11_1fileWriter {
     public static void main(String[] args) throws IOException {
         fileWriter();
         fileWriterAndBuffer();
