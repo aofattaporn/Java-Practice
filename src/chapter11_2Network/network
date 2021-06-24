@@ -19,7 +19,14 @@ Port
 การเชื่อมต่อ Sever และ Client
 ในส่วนของ Sever
     -   สร้าง object ให้แก่ SeverSocket โดยระบุหมายเลข port ที่ไม่ซ้ำให้ constructor
+        * ServerSocket severSocket = new ServerSocket(8000);
+
     -   ใช้ referance ของ class Socket ในการรับ object ที่ได้มาจาก Client โดย method accept()
+        *  Socket socket = severSocket.accept();
+
 ในส่วนของ Client
     -   ในส่วนของ Client ต้องมีการรับ port ที่ว่าง
+
+การทำ Multi Client
+    ในการทำจริง เครื่อง sever ต้องพร้อมทำงานเสมอ และ เครื่อง Client อาจจะมีหลายเครื่อง
 

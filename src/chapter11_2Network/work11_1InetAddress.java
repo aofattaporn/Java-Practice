@@ -16,6 +16,7 @@ public class work11_1InetAddress {
         InetAddress inet = InetAddress.getLoopbackAddress();
         System.out.println("IP   : " + inet.getHostAddress());
         System.out.println("Host : " + inet.getHostName());
+
     }
 
 }

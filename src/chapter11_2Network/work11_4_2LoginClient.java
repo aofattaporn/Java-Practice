@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 public class work11_4_2LoginClient {
     public static void main(String[] args) throws IOException {
-
+        //Connecting Client
         Socket socket = new Socket("localhost", 8000);
         OutputStream out = socket.getOutputStream();
         DataOutputStream datOut = new DataOutputStream(out);
@@ -14,6 +14,7 @@ public class work11_4_2LoginClient {
 
         String login ;
         String password;
+
         System.out.print(" Input User Name : " );
         login = scanner.next();
         System.out.print(" Input User Name : " );
